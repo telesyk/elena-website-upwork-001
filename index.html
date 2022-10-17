@@ -4,64 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>Elena's Store</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
   </head>
-  <body class="page">
+  <body class="page page-home">
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <div class="header-brand">
-            <img
-              src="https://image.shutterstock.com/image-vector/free-logo-simple-illustration-vector-260nw-776460778.jpg"
-              alt="website brand"
-              loading="lazy"
-            />
-          </div>
-          <div class="header-menu-button">
-            <button class="btn btn-menu">Menu</button>
-          </div>
-          <div class="header-menu">
-            <a href="#" class="header-menu-item">Home</a>
-            <a href="#" class="header-menu-item">About Us</a>
-            <a href="#" class="header-menu-item">Products</a>
-            <a href="#" class="header-menu-item">Contact</a>
-          </div>
-          <div class="header-search">
-            <button class="btn btn-search">Search</button>
-            <input
-              type="text"
-              class="header-search-control"
-              placeholder="Search product"
-            />
-          </div>
-          <div class="header-wish-list">
-            <button class="btn btn-wish-list">Icon wish list</button>
-          </div>
-          <div class="header-card">
-            <button class="btn btn-cart">Icon cart</button>
-          </div>
-        </nav>
+      <div class="header__top">
+        <div class="container">
+          <nav class="header__nav">
+            <div class="header__brand">
+              <img
+                src="https://image.shutterstock.com/image-vector/free-logo-simple-illustration-vector-260nw-776460778.jpg"
+                width="96"
+                alt="website brand"
+                loading="lazy"
+              />
+            </div><!-- End Header Logotype -->
+            <div class="header__menu-button">
+              <button class="btn">Menu</button>
+            </div>
+            <div class="header__search">
+              <button class="btn">Search</button>
+              <input
+                type="text"
+                class="header__search-control"
+                placeholder="Search product"
+              />
+            </div>
+            <div class="header__wish-list">
+              <button class="btn">Icon wish list</button>
+            </div>
+            <div class="header__card">
+              <button class="btn btn-accent">Icon cart</button>
+            </div>
+          </nav>
+        </div>
       </div>
-    </header>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="main-menu">
+            <a href="#" class="main-menu__item">Home</a>
+            <a href="#" class="main-menu__item">About Us</a>
+            <a href="#" class="main-menu__item">Products</a>
+            <a href="#" class="main-menu__item">Contact</a>
+          </nav><!-- End Main Menu -->
+        </div>
+      </div>
+    </header><!-- End Header -->
+
     <main class="main">
       <section class="section section-intro">
         <div class="container">
           <h1>Section intro - main banner - New product</h1>
         </div>
-      </section>
+      </section><!-- End Section Intro - Main banner -->
+
       <section class="section section-top-sale">
         <div class="container">
           <h2>Top sale product card</h2>
+          <!-- Single Product cart -->
+
         </div>
-      </section>
-      <section class="section sectio-product-list">
+      </section><!-- End Section Top Sale -->
+
+      <section class="section section-products-popular">
         <div class="container">
-          <h2>Section products list - simple slider with products</h2>
+          <h2>Section products list - simple slider with popular products</h2>
+          <div class="product-cart">
+            <div class="product-cart__image">
+              <img width="180" src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product">
+            </div>
+            <div class="product-cart__title">
+              <span class="text-primary">Example of product titlte</span>
+            </div>
+            <div class="product-cart__price">
+              <span>$</span>19,99
+            </div>
+            <div class="product-cart__buttons">
+              <button class="btn btn">Icon wish</button>
+              <button class="btn btn-accent">Icon cart</button>
+            </div>
+          </div><!-- End single Product Cart -->
         </div>
-      </section>
-    </main>
+      </section><!-- End Section Products Popular -->
+    </main><!-- End Main -->
+
     <footer class="footer">
-      <p>website's footer. @ 2022</p>
-    </footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__brand">
+            <div class="footer__brand-logo">
+              <img
+              src="https://image.shutterstock.com/image-vector/free-logo-simple-illustration-vector-260nw-776460778.jpg"
+              width="96"
+              alt="website brand"
+              loading="lazy"
+            />  
+            </div>
+            <div class="footer__brand-name">Elena's Store</div>
+          </div><!-- End Footer Branding -->
+          <div class="footer__nav">
+            <a href="#" class="footer__nav-item">Payment methods</a>
+            <a href="#" class="footer__nav-item">Returns</a>
+            <a href="#" class="footer__nav-item">Delivery</a>
+            <a href="#" class="footer__nav-item">Terms and Conditions</a>
+            <a href="#" class="footer__nav-item">Privacy policy</a>
+          </div><!-- End Footer Nav Links -->
+          <div class="footer__contacts">
+            <div class="footer__contacts-tel">
+              <a href="tel:+111223344567" title="contact tel">+111223344567</a>
+            </div>
+            <div class="footer__contacts-email">
+              <a href="mailto:some.elenas@email.au.com" title="contact email">some.elenas@email.au.com</a>
+            </div>
+            <div class="footer__contacts-socials">
+              list of social media links
+            </div>
+          </div><!-- End Footer Contacts -->
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="text-dimmed text-small">2042, 333 King St, Sydney, New South Wales, Australia</p>
+          <p class="text-dimmed text-small">Copyright © 2022 Elena's Store</p>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <!-- JavaScript imports -->
+    <script src="js/index.js"></script>
   </body>
 </html>
