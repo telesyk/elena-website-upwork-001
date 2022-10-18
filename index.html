@@ -52,7 +52,7 @@
               /> -->
             </div>
             <div class="header__wish-list">
-              <button class="btn btn-border">
+              <button class="btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                 </svg>
@@ -83,11 +83,35 @@
       <section class="section section-intro">
         <div class="container">
           <h1>Section intro - main banner - New product</h1>
-          <!-- headings -->
+          <!-- TEST headings -->
           <div class="heading-large">Sample of title Large</div>
           <div class="heading-medium">Sample of title Medium</div>
           <div class="heading-small">Sample of title Small</div>
           <p>Regular text</p>
+
+          <hr />
+          <!-- TEST buttons -->
+          <button class="btn">
+            <span>Simple</span>
+          </button>
+          <button class="btn btn-border">
+            <span>Bordered</span>
+          </button>
+          <button class="btn btn-accent">
+            <span>Accent</span>
+          </button>
+          <button class="btn" disabled>
+            <span>Disabled</span>
+          </button>
+          <button class="btn btn-border" disabled>
+            <span>Disabled</span>
+          </button>
+          <button class="btn btn-accent" disabled>
+            <span>Disabled</span>
+          </button>
+          <a class="btn-link" href="#">
+            <span>Button link</span>
+          </a>
         </div>
       </section><!-- End Section Intro - Main banner -->
 
@@ -108,7 +132,7 @@
                 <img width="180" src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product">
               </div>
               <div class="product-cart__title">
-                <span class="text-primary">Example of product titlte</span>
+                <a class="text-primary" href="#">Example of product titlte</a>
               </div>
               <div class="product-cart__price">
                 <span>$</span>19,99
@@ -134,7 +158,7 @@
                 <img width="180" src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product">
               </div>
               <div class="product-cart__title">
-                <span class="text-primary">Example of product titlte</span>
+                <a class="text-primary" href="#">Example of product titlte</a>
               </div>
               <div class="product-cart__price">
                 <span>$</span>19,99
@@ -183,13 +207,23 @@
             </nav><!-- End Footer Nav Links -->
             <address class="footer__contacts">
               <div class="footer__contacts-tel">
-                <a href="tel:+111223344567" title="contact tel">+111223344567</a>
+                <a class="btn-link" href="tel:+111223344567" title="contact tel">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  <span>+111223344567</span>
+                </a>
               </div><!-- End Footer Phone Link -->
               <div class="footer__contacts-email">
-                <a href="mailto:example@email.com" title="contact email">example@email.com</a>
+                <a class="btn-link" href="mailto:example@email.com" title="contact email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  <span>example@email.com</span>
+                </a>
               </div><!-- End Footer Email Link -->
             </address><!-- End Footer Contacts -->
-            <div class="footer__socials">
+            <div class="footer__contacts">
               <h3 class="heading-small">Stay in touch</h3>
               <ul class="socials">
                 <li class="socials__item">
@@ -241,7 +275,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae alias voluptas consectetur! Odio explicabo non fuga reprehenderit dignissimos nam, beatae vero quae modi, labore voluptatem amet facilis rerum unde.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae alias voluptas consectetur! Odio explicabo non fuga reprehenderit dignissimos nam, beatae vero quae modi, labore voluptatem amet facilis rerum unde.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae alias voluptas consectetur! Odio explicabo non fuga reprehenderit dignissimos nam, beatae vero quae modi, labore voluptatem amet facilis rerum unde.</p>
-            <button class="btn btn">Icon wish</button>
+            <button class="btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+            </button>
           </div>
         </div>
         <div class="modal__close">
