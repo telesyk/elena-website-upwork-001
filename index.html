@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Elena's Store</title>
+    <title>TipTop Soles</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&display=swap" rel="stylesheet">
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/index.css" type="text/css" />
   </head>
@@ -23,7 +23,7 @@
             <div class="header__brand">
               <picture class="brand-img">
                 <img
-                  src="https://image.shutterstock.com/image-vector/free-logo-simple-illustration-vector-260nw-776460778.jpg"
+                  src="img/logotype.png"
                   width="64"
                   alt="website brand"
                   loading="lazy"
@@ -31,10 +31,20 @@
               </picture>
             </div><!-- End Header Logotype -->
             <div class="header__menu-button">
-              <button class="btn btn-secondary">Menu</button>
+              <button class="btn btn-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+                <span class="is-hidden">Menu</span>
+              </button>
             </div>
             <div class="header__search">
-              <button class="btn">Search</button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <span>Search</span>
+              </button>
               <!-- <input
                 type="text"
                 class="header__search-control form-control"
@@ -42,10 +52,18 @@
               /> -->
             </div>
             <div class="header__wish-list">
-              <button class="btn">Icon wish list</button>
+              <button class="btn btn-border">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg>
+              </button>
             </div>
             <div class="header__card">
-              <button class="btn btn-accent">Icon cart</button>
+              <button class="btn btn-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+              </button>
             </div>
           </nav>
         </div>
@@ -53,10 +71,9 @@
       <div class="header__bottom">
         <div class="container">
           <nav class="main-menu">
-            <a href="#" class="main-menu__item">Home</a>
-            <a href="#" class="main-menu__item">About Us</a>
-            <a href="#" class="main-menu__item">Products</a>
-            <a href="#" class="main-menu__item">Contact</a>
+            <a href="#" class="main-menu__link">About Us</a>
+            <a href="#" class="main-menu__link">Products</a>
+            <a href="#" class="main-menu__link">Contact</a>
           </nav><!-- End Main Menu -->
         </div>
       </div>
@@ -66,6 +83,11 @@
       <section class="section section-intro">
         <div class="container">
           <h1>Section intro - main banner - New product</h1>
+          <!-- headings -->
+          <div class="heading-large">Sample of title Large</div>
+          <div class="heading-medium">Sample of title Medium</div>
+          <div class="heading-small">Sample of title Small</div>
+          <p>Regular text</p>
         </div>
       </section><!-- End Section Intro - Main banner -->
 
@@ -80,21 +102,59 @@
       <section class="section section-products-popular">
         <div class="container">
           <h2>Section products list - simple slider with popular products</h2>
-          <div class="product-cart">
-            <div class="product-cart__image">
-              <img width="180" src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product">
-            </div>
-            <div class="product-cart__title">
-              <span class="text-primary">Example of product titlte</span>
-            </div>
-            <div class="product-cart__price">
-              <span>$</span>19,99
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn btn">Icon wish</button>
-              <button class="btn btn-accent">Icon cart</button>
-            </div>
-          </div><!-- End single Product Cart -->
+          <div class="products-list d-flex">
+            <div class="product-cart">
+              <div class="product-cart__image">
+                <img width="180" src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product">
+              </div>
+              <div class="product-cart__title">
+                <span class="text-primary">Example of product titlte</span>
+              </div>
+              <div class="product-cart__price">
+                <span>$</span>19,99
+              </div>
+              <div class="product-cart__buttons">
+                <button class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                  </svg>
+                </button>
+                <button class="btn btn-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                  <span>Buy</span>
+                </button>
+              </div>
+            </div><!-- End single Product Cart -->
+
+            <div class="product-cart">
+              <div class="product-cart__image">
+                <img width="180" src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product">
+              </div>
+              <div class="product-cart__title">
+                <span class="text-primary">Example of product titlte</span>
+              </div>
+              <div class="product-cart__price">
+                <span>$</span>19,99
+              </div>
+              <div class="product-cart__buttons">
+                <button class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                  </svg>
+                </button>
+                <button class="btn btn-accent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                  <span>Buy</span>
+                </button>
+              </div>
+            </div><!-- End single Product Cart -->
+          </div><!-- End Products List -->
         </div>
       </section><!-- End Section Products Popular -->
     </main><!-- End Main -->
@@ -102,66 +162,66 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="container">
-          <div class="footer__brand">
-            <div class="footer__brand-logo">
-              <picture class="brand-img">
+          <div class="footer__top-container">
+            <div class="footer__brand">
+              <picture class="footer__brand-logo brand-img">
                 <img
-                  src="https://image.shutterstock.com/image-vector/free-logo-simple-illustration-vector-260nw-776460778.jpg"
+                  src="img/logotype.png"
                   width="64"
                   alt="website brand"
                   loading="lazy"
                 />
-              </picture> 
-            </div>
-            <div class="footer__brand-name">Elena's Store</div>
-          </div><!-- End Footer Branding -->
-          <nav class="footer__nav">
-            <a href="#" class="footer__nav-item">Payment methods</a>
-            <a href="#" class="footer__nav-item">Returns</a>
-            <a href="#" class="footer__nav-item">Delivery</a>
-            <a href="#" class="footer__nav-item">Terms and Conditions</a>
-            <a href="#" class="footer__nav-item">Privacy policy</a>
-          </nav><!-- End Footer Nav Links -->
-          <div class="footer__contacts">
-            <div class="footer__contacts-tel">
-              <a href="tel:+111223344567" title="contact tel">+111223344567</a>
-            </div>
-            <div class="footer__contacts-email">
-              <a href="mailto:some.elenas@email.au.com" title="contact email">some.elenas@email.au.com</a>
-            </div>
-            <div class="footer__contacts-socials">
-              <h3>Stay in touch</h3>
-              <ul class="social-media">
-                <li class="social-media__item">
-                  <a class="social-media__link" href="#" title="Facebook link">
+              </picture>
+              <div class="footer__brand-name">TipTop Soles</div>
+            </div><!-- End Footer Branding -->
+            <nav class="footer__nav">
+              <a href="#" class="footer__nav-item">Payment methods</a>
+              <a href="#" class="footer__nav-item">Returns</a>
+              <a href="#" class="footer__nav-item">Delivery</a>
+              <a href="#" class="footer__nav-item">Terms and Conditions</a>
+              <a href="#" class="footer__nav-item">Privacy policy</a>
+            </nav><!-- End Footer Nav Links -->
+            <address class="footer__contacts">
+              <div class="footer__contacts-tel">
+                <a href="tel:+111223344567" title="contact tel">+111223344567</a>
+              </div><!-- End Footer Phone Link -->
+              <div class="footer__contacts-email">
+                <a href="mailto:example@email.com" title="contact email">example@email.com</a>
+              </div><!-- End Footer Email Link -->
+            </address><!-- End Footer Contacts -->
+            <div class="footer__socials">
+              <h3 class="heading-small">Stay in touch</h3>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" title="Facebook link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                     </svg>
                   </a>
                 </li>
-                <li class="social-media__item">
-                  <a class="social-media__link" href="#" title="Instagram link">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" title="Instagram link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                       <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                     </svg>
                   </a>
                 </li>
-                <li class="social-media__item">
-                  <a class="social-media__link" href="#" title="Pinterest link">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" title="Pinterest link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
                       <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
                     </svg>
                   </a>
                 </li>
               </ul><!-- End Social Media Links -->
-            </div>
-          </div><!-- End Footer Contacts -->
+            </div><!-- End Footer Socials list -->
+          </div><!-- End Footer-Top Container -->
         </div>
       </div>
       <div class="footer__bottom">
         <div class="container">
-          <p class="text-dimmed text-small">2042, 333 King St, Sydney, New South Wales, Australia</p>
-          <p class="text-dimmed text-small">Copyright © 2022 Elena's Store</p>
+          <address class="text-small">2042, 333 King St, Sydney, New South Wales, Australia</address>
+          <p class="text-small">Copyright © 2022 TipTop Soles</p>
         </div>
       </div>
     </footer><!-- End Footer -->
