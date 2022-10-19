@@ -22,7 +22,7 @@
     <div class="header__top">
       <div class="container">
         <nav class="header__nav">
-          <a href="/index.html" title="Home" class="header__brand">
+          <a href="/index.html" title="" class="header__brand">
             <picture class="brand-img">
               <img src="img/logotype.png" alt="website brand" loading="lazy" />
             </picture>
@@ -81,25 +81,27 @@
   </header><!-- End Header -->
 
   <main class="main">
-    <section class="section section-banner">
-      <div class="banner">
-        <picture class="banner__visual">
-          <img class="banner__image" src="img/banner-1.jpg" alt="new collection">
-        </picture><!-- End Banner Picture -->
-        <div class="banner__info">
-          <div class="container">
+    <section class="section section-banner" style="display: none;">
+      <div class="container">
+        <div class="banner">
+          <picture class="banner__visual">
+            <img class="banner__image" src="img/banner-1.jpg" alt="new collection">
+          </picture><!-- End Banner Picture -->
+          <div class="banner__info">
             <div class="banner__title">
               <h1 class="heading-sm">TipTop Soles always on top</h1>
             </div>
             <div class="banner__slogan">
+              <!-- <h2 class="heading-lg">Walk with style</h2> -->
+              <!-- <h2 class="heading-lg">Let's do this step together</h2> -->
               <h2 class="heading-lg">Let's make a step.</h2>
             </div>
             <div class="banner__details d-flex">
               <div class="banner__price">
-                <span class="price-special">$15,99</span>
+                <span>$15,99</span>
               </div>
               <div class="banner__button">
-                <a class="btn btn-accent" href="#">
+                <a class="btn btn-border" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire"
                     viewBox="0 0 16 16">
                     <path
@@ -109,247 +111,46 @@
                 </a>
               </div>
             </div>
-          </div>
-        </div><!-- End Banner Info -->
-      </div><!-- End Banner -->
-    </section>
-
-    <section class="section section-top-sale">
-      <div class="container">
-        <h2 class="section__title heading-md text-center">Top Sale</h2>
-        <!-- Single Product cart -->
-        <div class="product-single d-flex">
-          <div class="product-single__visual">
-            <picture class="product-single__image">
-              <img src="img/product-item-007.jpg" alt="">
-            </picture>
-          </div>
-          <div class="product-single__info">
-            <h2 class="heading-md product-single__title">Product title</h2>
-            <div class="product-single__price">
-              <span>$19,99</span>
-            </div>
-            <div class="product-single__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-            <div class="product-single__details">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ratione repudiandae cum iste possimus
-                sapiente recusandae nam, ab dolorem ea et dolorum quisquam aperiam accusamus maxime quis culpa earum
-                magnam?</p>
-            </div>
-          </div>
-        </div>
+          </div><!-- End Banner Info -->
+        </div><!-- End Banner -->
       </div>
-    </section><!-- End Section Top Sale -->
+    </section><!-- End Section Intro - Main banner -->
 
-    <section class="section section-popular">
+    <section class="section section-samples" style="background-color: grey;">
       <div class="container">
-        <h2 class="section__title heading-md text-center">Trending Products</h2>
-        <div class="products d-flex">
-          <div class="product-cart">
-            <picture class="product-cart__image">
-              <img src="img/product-item-001.jpg" alt="product">
-            </picture>
-            <div class="product-cart__title">
-              <a class="product-cart__title-link" href="#">Example of product titlte</a>
-            </div>
-            <div class="product-cart__price">
-              <span>$19,99</span>
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-          </div><!-- End single Product Cart -->
-
-          <div class="product-cart">
-            <picture class="product-cart__image">
-              <img src="img/product-item-002.jpg" alt="product">
-            </picture>
-            <div class="product-cart__title">
-              <a class="product-cart__title-link" href="#">Example of product titlte</a>
-            </div>
-            <div class="product-cart__price">
-              <span class="price-old text-small">$19,99</span><span>$19,99</span>
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-          </div><!-- End single Product Cart -->
-
-          <div class="product-cart">
-            <picture class="product-cart__image">
-              <img src="img/product-item-003.jpg" alt="product">
-            </picture>
-            <div class="product-cart__title">
-              <a class="product-cart__title-link" href="#">Example of product titlte</a>
-            </div>
-            <div class="product-cart__price">
-              <span class="price-old text-small">$19,99</span><span>$19,99</span>
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-          </div><!-- End single Product Cart -->
-
-          <div class="product-cart">
-            <picture class="product-cart__image">
-              <img src="img/product-item-008.jpg" alt="product">
-            </picture>
-            <div class="product-cart__title">
-              <a class="product-cart__title-link" href="#">Example of product titlte</a>
-            </div>
-            <div class="product-cart__price">
-              <span>$19,99</span>
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-          </div><!-- End single Product Cart -->
-
-          <div class="product-cart">
-            <picture class="product-cart__image">
-              <img src="img/product-item-005.jpg" alt="product">
-            </picture>
-            <div class="product-cart__title">
-              <a class="product-cart__title-link" href="#">Example of product titlte</a>
-            </div>
-            <div class="product-cart__price">
-              <span class="price-old text-small">$19,99</span><span>$19,99</span>
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-          </div><!-- End single Product Cart -->
-
-          <div class="product-cart">
-            <picture class="product-cart__image">
-              <img src="img/product-item-009.jpg" alt="product">
-            </picture>
-            <div class="product-cart__title">
-              <a class="product-cart__title-link" href="#">Example of product titlte</a>
-            </div>
-            <div class="product-cart__price">
-              <span>$19,99</span>
-            </div>
-            <div class="product-cart__buttons">
-              <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-                </svg>
-              </button>
-              <button class="btn btn-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart-plus" viewBox="0 0 16 16">
-                  <path
-                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                  <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-                <span>Buy</span>
-              </button>
-            </div>
-          </div><!-- End single Product Cart -->
-        </div><!-- End Products List -->
+        <!-- TEST headings -->
+        <div class="section__title heading-md">Sample of Section Title</div>
+        <div class="heading-lg">Sample of title Large</div>
+        <div class="heading-md">Sample of title Medium</div>
+        <div class="heading-sm">Sample of title Small</div>
+        <p>Regular text</p>
+        <br />
+        <hr />
+        <br />
+        <!-- TEST buttons -->
+        <button class="btn">
+          <span>Simple</span>
+        </button>
+        <button class="btn btn-border">
+          <span>Bordered</span>
+        </button>
+        <button class="btn btn-accent">
+          <span>Accent</span>
+        </button>
+        <button class="btn" disabled>
+          <span>Disabled</span>
+        </button>
+        <button class="btn btn-border" disabled>
+          <span>Disabled</span>
+        </button>
+        <button class="btn btn-accent" disabled>
+          <span>Disabled</span>
+        </button>
+        <a class="btn-link" href="#">
+          <span>Button link</span>
+        </a>
       </div>
-    </section><!-- End Section Products Popular -->
+    </section><!-- End Section TEST - REMOVE before PRODUCTION -->
   </main><!-- End Main -->
 
   <footer class="footer">
