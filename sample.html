@@ -22,63 +22,98 @@
     <div class="header__top">
       <div class="container">
         <nav class="header__nav">
-          <a href="/index.html" title="" class="header__brand">
-            <picture class="brand-img">
-              <img src="img/logotype.png" alt="website brand" loading="lazy" />
-            </picture>
-          </a><!-- End Header Logotype -->
-          <div class="header__menu-button">
-            <button class="btn btn-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                <path
-                  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-              </svg>
-              <span class="is-hidden">Menu</span>
-            </button>
+          <div class="header__nav-left">
+            <div class="header__brand">
+              <a href="/index.html" title="Home page" class="brand-img">
+                <img src="img/logotype.png" alt="website brand" loading="lazy" decoding="auto" />
+              </a>
+            </div><!-- End Logotype -->
           </div>
-          <div class="header__search">
-            <button class="btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
-              <span>Search</span>
-            </button>
-          </div>
-          <div class="header__wish-list">
-            <button class="btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-              </svg>
-            </button>
-          </div>
-          <div class="header__card">
-            <button class="btn btn-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
-                viewBox="0 0 16 16">
-                <path
-                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-              </svg>
-            </button>
+          <div class="header__nav-right d-flex">
+            <div class="header__search">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </button>
+            </div><!-- End Search Trigger -->
+            <div class="header__favorite">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                </svg>
+              </button>
+            </div><!-- End Favorite Trigger -->
+            <div class="header__card">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+              </button>
+            </div><!-- End Cart Trigger -->
+            <div class="header__login">
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+              </button>
+            </div><!-- End Login trigger -->
+            <div class="header__menu-toggler">
+              <button class="btn" id="mainMenuOpen" data-target="mainMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+                <span hidden>Menu</span>
+              </button>
+            </div><!-- End Menu trigger -->
           </div>
         </nav>
       </div>
-    </div>
+    </div><!-- End Header Top -->
     <div class="header__bottom">
       <div class="container">
-        <nav class="main-menu">
+        <nav class="main-menu" id="mainMenu" data-is-visible="false">
           <a href="#" class="main-menu__link">About Us</a>
           <a href="#" class="main-menu__link">Products</a>
           <a href="#" class="main-menu__link">Contact</a>
-          <a href="/sample.html" class="main-menu__link">Sample</a>
+          <a href="/sample.html" class="main-menu__link">Sample Test</a>
+          <button class="main-menu__link btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+            </svg>
+            <span>Favorite</span>
+          </button>
+          <button class="main-menu__link btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            <span>Login</span>
+          </button>
+          <button class="main-menu__link btn" id="mainMenuClose" data-target="mainMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+            viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+            <span>Close</span>
+          </button>
         </nav><!-- End Main Menu -->
       </div>
-    </div>
-  </header><!-- End Header -->
+    </div><!-- End Header Bottom -->
+  </header>
+  <!-- End Header -->
 
   <main class="main">
     <section class="section section-banner" style="display: none;">
@@ -151,18 +186,19 @@
         </a>
       </div>
     </section><!-- End Section TEST - REMOVE before PRODUCTION -->
-  </main><!-- End Main -->
+  </main>
+  <!-- End Main -->
 
   <footer class="footer">
     <div class="footer__top">
       <div class="container">
         <div class="footer__top-container">
-          <a href="/index.html" title="Home" class="footer__brand">
-            <picture class="footer__brand-logo brand-img">
-              <img src="img/logotype.png" alt="website brand" loading="lazy" />
-            </picture>
+          <div class="footer__brand">
+            <a href="/index.html" title="Home page" class="footer__brand-logo brand-img">
+              <img src="img/logotype.png" alt="website brand" loading="lazy" decoding="auto" />
+            </a>
             <div class="footer__brand-name">TipTop Soles</div>
-          </a><!-- End Footer Branding -->
+          </div><!-- End Footer Branding -->
           <nav class="footer__nav">
             <a href="#" class="footer__nav-item">Payment methods</a>
             <a href="#" class="footer__nav-item">Returns</a>
@@ -233,7 +269,8 @@
         <p class="text-small">Copyright © 2022 TipTop Soles</p>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <!-- Modals -->
   <div class="modal">
