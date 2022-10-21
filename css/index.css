@@ -7,7 +7,7 @@
 
 /* Site's variables */
 :root {
-    /* Colors */
+    /* COLORS */
     --site-color-primary: #E1CBB7;
     --site-color-dark: #473137;
     --site-color-focus: #A18F77;
@@ -22,7 +22,7 @@
     --site-color-text-normal: var(--site-color-dark);
     --site-color-text-dimmed: var(--site-color-dimmed);
     --site-color-bg: var(--site-color-light);
-    /* Typography */
+    /* TYPOGRAPHY */
     --site-font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
     --site-font-size-normal: 1rem;
     --site-font-size-pre-small: 0.875rem;
@@ -42,33 +42,45 @@
     --site-heading-md: var(--site-heading-size-md);
     --site-heading-sm: var(--site-heading-size-sm);
     --site-text-transition: all .25s ease;
-    /* Basics */
+    /* BASICS */
     --site-container-width: 100%;
     --site-gaps-base: 1rem;
     --site-gaps-half: calc(var(--site-gaps-base) / 2);
     --site-gaps-double: calc(var(--site-gaps-base) * 2);
     --site-border-radius: 5px;
-    /* Links */
-    --site-links-color: var(--site-color-text-normal);
-    --site-links-line-height: 1.375;
-    --site-links-margin-y: var(--site-gaps-half);
-    /* Gaps */
-    --site-container-gaps: var(--site-gaps-base);
-    --site-section-gaps: var(--site-gaps-double);
-    /* Control elements */
+    /* CONTROL ELEMENTS */
     --site-control-height: 38px;
     --site-control-border-radius: var(--site-border-radius);
     --site-control-border-width: 2px;
-    /* Logotype */
+    /* LINKS */
+    --site-link-color: var(--site-color-text-normal);
+    --site-link-visited-color: #724c27;
+    --site-link-line-height: 1.375;
+    --site-link-margin-y: var(--site-gaps-half);
+    /* BUTTONS */
+    --site-btn-gaps: 0 var(--site-gaps-base);
+    --site-btn-color: var(--site-color-text-normal);
+    --site-btn-border-color: transparent;
+    --site-btn-bg-color: transparent;
+    --site-btn-child-gaps: calc(var(--site-gaps-base) / 3);
+    /* GAPS */
+    --site-container-gaps: var(--site-gaps-base);
+    --site-section-gaps: var(--site-gaps-double);
+    /* LOGOTYPE */
     --site-logo-size: 56px;
-    /* Icons */
+    /* ICONS */
     --site-icon-size: 20px;
-    /* Header */
+    /* HEADER */
     --header-login-display: none;
     --header-brand-self-align: initial;
     --header-menu-toggler-display: block;
     --header-bottom-border: none;
-    /* Main Menu */
+    /* FOOTER */
+    --footer-top-block-gaps-y: var(--site-gaps-base);
+    --footer-top-block-flex: 0 0 100%;
+    --footer-top-block-align: center;
+    --footer-top-font-size: var(--site-font-size-pre-small);
+    /* MAIN MENU */
     --main-menu-direction: column;
     --main-menu-position: absolute;
     --main-menu-item-color: var(--site-color-text-normal);
@@ -76,12 +88,7 @@
     --main-menu-position-x: -100vh;
     --main-menu-login-visibility: flex;
     --main-menu-close-visibility: flex;
-    /* Footer */
-    --footer-top-block-gaps-y: var(--site-gaps-base);
-    --footer-top-block-flex: 0 0 100%;
-    --footer-top-block-align: center;
-    --footer-top-font-size: var(--site-font-size-pre-small);
-    /* Home Banner */
+    /* HOME BANNER */
     --home-banner-height: 480px;
     --home-banner-margin-x: calc(var(--site-gaps-base) * -1);
     --home-banner-img-width: auto;
@@ -90,7 +97,7 @@
     --home-banner-info-gaps: var(--site-gaps-double) 0;
     --home-banner-info-bg-rgba: rgba(161, 143, 119, 0.75);
     --home-banner-details-align: center;
-    /* Product */
+    /* PRODUCT */
     --product-cart-color: var(--site-color-primary);
     --product-item-width: 180px; /* Same size setted in html <img width="180"> */
     --product-item-picture-height: 135px;
@@ -98,13 +105,13 @@
     --product-item-title: var(--site-font-size-pre-small);
     --product-item-title-color: var(--site-color-text-normal);
     --product-item-shadow: 0 0 8px var(--site-color-primary);
-    /* Product single */
+    /* PRODUCT SINGLE */
     --product-single-direction: column;
     --product-single-gap: var(--site-gaps-base);
     --product-single-gaps: 0;
     --product-single-width: auto;
     --product-single-buttons-width: 50%;
-    /* Modals */
+    /* MODALS */
     --modal-position: fixed;
     --modal-width: calc(100% - 1rem);
     --modal-height: auto;
@@ -136,23 +143,24 @@ picture {
 }
 
 img {
-    width: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 a {
-    color: var(--site-links-color);
+    color: var(--site-link-color);
 }
 
 a:visited {
-    opacity: 0.9;
+    color: var(--site-link-visited-color);
 }
 
 a:hover {
-    --site-links-color: var(--site-color-text-focus);
+    --site-link-color: var(--site-color-text-focus);
 }
 
 a:active {
-    --site-links-color: var(--site-color-text-active);
+    --site-link-color: var(--site-color-text-active);
 }
 
 svg.bi {
@@ -257,63 +265,63 @@ a:focus,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: calc(var(--site-gaps-base) / 3);
+    gap: var(--site-btn-child-gaps);
 }
 
 .btn {
     height: var(--site-control-height);
-    padding: 0 var(--site-gaps-base);
+    padding: var(--site-btn-gaps);
     border-width: var(--site-control-border-width);
     border-style: solid;
-    border-color: transparent;
+    border-color: var(--site-btn-border-color);
     border-radius: var(--site-control-border-radius);
     outline: none;
-    background-color: transparent;
-    color: var(--site-color-text-normal);
+    background-color: var(--site-btn-bg-color);
+    color: var(--site-btn-color);
     font-size: var(--site-font-size-normal);
     text-decoration: none;
     cursor: pointer;
 }
 
-.btn:focus:not(.btn-border):not(.btn-accent) ,
-.btn:hover:not(.btn-border):not(.btn-accent) {
-    color: var(--site-color-text-focus);
+.btn:focus ,
+.btn:hover {
+    --site-btn-color: var(--site-color-text-focus);
 }
 
 .btn-border {
-    border-color: var(--site-color-dark);
+    --site-btn-border-color: var(--site-color-dark);
 }
 
 .btn-border:focus,
 .btn-border:hover {
-    border-color: var(--site-color-text-focus);
-    color: var(--site-color-text-focus);
+    --site-btn-border-color: var(--site-color-text-focus);
+    --site-btn-color: var(--site-color-text-focus);
 }
 
 .btn-accent {
-    border-color: var(--site-color-dark);
-    background-color: var(--site-color-dark);
-    color: var(--site-color-light);
+    --site-btn-border-color: var(--site-color-dark);
+    --site-btn-bg-color: var(--site-color-dark);
+    --site-btn-color: var(--site-color-light);
 }
 
 .btn-accent:focus,
 .btn-accent:hover {
-    background-color: transparent;
-    color: var(--site-color-dark);
+    --site-btn-bg-color: transparent;
+    --site-btn-color: var(--site-color-dark);
 }
 
 .btn:disabled {
-    color: var(--site-color-dimmed) !important;
+    --site-btn-color: var(--site-color-dimmed) !important;
 }
 
 .btn-border:disabled {
-    border-color: var(--site-color-dimmed) !important;
+    --site-btn-border-color: var(--site-color-dimmed) !important;
 }
 
 .btn-accent:disabled {
-    border-color: var(--site-color-dimmed) !important;
-    background-color: var(--site-color-dimmed) !important;
-    color: var(--site-color-light) !important;
+    --site-btn-border-color: var(--site-color-dimmed) !important;
+    --site-btn-bg-color: var(--site-color-dimmed) !important;
+    --site-btn-color: var(--site-color-light) !important;
 }
 
 /* Modal */
@@ -401,7 +409,7 @@ a:focus,
     padding: var(--site-gaps-base);
     color: var(--main-menu-item-color);
     font-weight: var(--site-font-thin);
-    line-height: var(--site-links-line-height);
+    line-height: var(--site-link-line-height);
     text-decoration: none;
     text-transform: uppercase;
     text-align: var(--main-menu-text-align);
@@ -498,19 +506,19 @@ a:focus,
 }
 
 .footer__nav-item {
-    line-height: var(--site-links-line-height);
+    line-height: var(--site-link-line-height);
 }
 
 .footer__nav-item,
 .footer__contacts .btn-link {
-    margin-bottom: var(--site-links-margin-y);
+    margin-bottom: var(--site-link-margin-y);
     word-break: break-all;
 }
 
 .footer__contacts {
     flex: var(--footer-top-block-flex);
     text-align: var(--footer-top-block-align);
-    line-height: var(--site-links-line-height);
+    line-height: var(--site-link-line-height);
 }
 
 .footer__contacts .socials {
@@ -628,7 +636,6 @@ a:focus,
 }
 
 .product-cart__image img {
-    width: auto;
     max-width: 133.333%; /* aspect ratio 4:3 */
     min-height: 100%;
     position: absolute;
