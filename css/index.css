@@ -144,7 +144,8 @@ picture {
     display: block;
 }
 
-img {
+/* Fix for mobile screens */
+img:not(.banner__image) {
     max-inline-size: 100%;
     block-size: auto;
 }
