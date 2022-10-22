@@ -71,7 +71,7 @@
     /* ICONS */
     --site-icon-size: 20px;
     /* HEADER */
-    --header-login-display: none;
+    --header-login-visibility: none;
     --header-brand-self-align: initial;
     --header-menu-toggler-display: block;
     --header-bottom-border: none;
@@ -87,7 +87,7 @@
     --main-menu-item-bg-color: #fffefe;
     --main-menu-text-align: center;
     --main-menu-position-x: -100vh;
-    --main-menu-login-visibility: flex;
+    --main-menu-btn-visibility: flex;
     --main-menu-close-visibility: flex;
     /* HOME BANNER */
     --home-banner-height: 480px;
@@ -140,14 +140,18 @@ body {
     overflow-x: hidden;
 }
 
-picture {
-    display: block;
+p {
+    line-height: var(--site-heading-line-height-md);
 }
 
-/* Fix for mobile screens */
+/* Fix for mobile screens (:not(.banner__image)) */
 img:not(.banner__image) {
     max-inline-size: 100%;
     block-size: auto;
+}
+
+picture {
+    display: block;
 }
 
 a {
@@ -337,14 +341,6 @@ a:focus,
     transition: var(--menu-transition);
 }
 
-.main-menu .btn {
-    display: var(--main-menu-close-visibility);
-}
-
-.main-menu .btn-link {
-    display: var(--main-menu-login-visibility);
-}
-
 .main-menu__link {
     padding: var(--site-gaps-base);
     color: var(--main-menu-item-color);
@@ -353,6 +349,19 @@ a:focus,
     text-decoration: none;
     text-transform: uppercase;
     text-align: var(--main-menu-text-align);
+}
+
+.main-menu__link.btn-close {
+    display: var(--main-menu-close-visibility);
+}
+
+.main-menu__link.btn-menu:not(.btn-close) {
+    display: var(--main-menu-btn-visibility);
+}
+
+.main-menu__link.btn-menu {
+    --site-control-height: auto;
+    --site-control-border-width: 0;
 }
 
 .main-menu__link:focus,
@@ -472,7 +481,7 @@ a:focus,
 
 .header__favorite,
 .header__login {
-    display: var(--header-login-display);
+    display: var(--header-login-visibility);
 }
 
 .header__menu-toggler {
@@ -738,6 +747,26 @@ a:focus,
     flex: 0 0 var(--product-single-buttons-width);
 }
 
+/* ABOUT */
+.about__gallery {
+    margin: var(--site-gaps-double) 0;
+    gap: var(--site-gaps-half);
+    overflow-x: auto;
+}
+
+.about__gallery-item {
+    flex: 1 1 234px;
+}
+
+.about__gallery-item img {
+    border-radius: var(--site-border-radius-base);
+}
+
+/* CONTACT */
+/* .contact {
+
+} */
+
 /* RESPONSIVE STYLES */
 @media (orientation: portrait) {
     :root {
@@ -779,8 +808,8 @@ a:focus,
         --site-heading-lg: var(--site-heading-size-xxl);
         --site-heading-md: var(--site-heading-size-lg);
         --site-heading-sm: var(--site-heading-size-md);
-        --main-menu-login-visibility: none;
-        --header-login-display: block;
+        --main-menu-btn-visibility: none;
+        --header-login-visibility: block;
         --header-brand-self-align: start;
         --footer-top-font-size: var(--site-font-size-normal);
         --home-banner-height: 600px;
