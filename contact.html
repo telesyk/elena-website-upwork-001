@@ -83,7 +83,7 @@
       <div class="container">
         <nav class="main-menu" id="mainMenu" role="menu" data-is-visible="false">
           <a href="/about.html" class="main-menu__link">About Us</a role="menuitem">
-          <a href="/sample.html" class="main-menu__link">Products</a role="menuitem">
+          <a href="/products.html" class="main-menu__link">Products</a role="menuitem">
           <a href="/contact.html" class="main-menu__link">Contact</a role="menuitem">
           <a href="/sample.html" class="main-menu__link">Sample Test</a role="menuitem">
           <button class="main-menu__link btn btn-menu" role="menuitem" data-trigger="modal" data-target="sampleModal">
@@ -118,19 +118,19 @@
   <main class="main">
     <section class="section section-contact">
       <div class="container">
-        <h1 class="section__title heading-lg">Contact Us</h1>
+        <h1 class="section__title heading-lg text-center">Contact Us</h1>
         <div class="contact d-flex">
           <form action="" class="contact__item contact-form">
             <div class="contact-form__control">
-              <input type="text" class="form-control" name="userName" placeholder="Your Name" />
+              <input type="text" class="form-control" name="userName" placeholder="Your Name" required />
               <p><span hidden>This field is required!</span></p>
             </div>
             <div class="contact-form__control">
-              <input type="email" class="form-control" name="userEmail" placeholder="Your Email" />
+              <input type="email" class="form-control" name="userEmail" placeholder="Your Email" required />
               <p><span hidden>This field is required!</span></p>
             </div>
             <div class="contact-form__control">
-              <textarea name="userMessage" id="usermessage" cols="30" rows="5" class="form-control" placeholder="Message text"></textarea>
+              <textarea name="userMessage" id="usermessage" cols="30" rows="5" class="form-control" placeholder="Message text" required></textarea>
               <p><span hidden>This field is required!</span></p>
             </div>
             <div class="contact-form__control">
@@ -143,7 +143,7 @@
           </div>
         </div>
       </div>
-    </section><!-- End Section TEST - REMOVE before PRODUCTION -->
+    </section><!-- End Contact -->
   </main>
   <!-- End Main -->
 
