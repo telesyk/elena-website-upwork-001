@@ -142,6 +142,10 @@ body {
     overflow-x: hidden;
 }
 
+iframe {
+    width: 100%;
+}
+
 p {
     margin: calc(var(--site-gaps-base) / 3) 0;
     line-height: var(--site-heading-line-height-md);
@@ -569,12 +573,12 @@ textarea.form-control {
     padding: var(--site-section-gaps) 0;
 }
 
-.section__title {
-    margin-bottom: var(--site-section-gaps);
-}
-
 .section-top-sale {
     background-color: var(--site-color-secondary);
+}
+
+.section__title {
+    margin-bottom: var(--site-section-gaps);
 }
 
 /* HOME BANNER */
@@ -782,8 +786,12 @@ textarea.form-control {
     max-width: calc(var(--contact-item-width) - var(--site-gaps-half));
 }
 
-.contact-image {
-    max-height: 260px;
+.contact-form__control {
+    margin-bottom: var(--site-gaps-base);
+}
+
+.contact-map {
+    max-height: 360px;
     overflow: hidden;
     border-radius: var(--site-border-radius-base);
 }

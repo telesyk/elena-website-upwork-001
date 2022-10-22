@@ -118,25 +118,29 @@
   <main class="main">
     <section class="section section-contact">
       <div class="container">
-        <h1 class="heading-lg">Contact Us</h1>
+        <h1 class="section__title heading-lg">Contact Us</h1>
         <div class="contact d-flex">
-          <picture class="contact__item contact-image">
-            <img src="img/contact-1.jpg" alt="contact" loading="lazy" decoding="async">
-          </picture>
           <form action="" class="contact__item contact-form">
-            <p class="contact-form__control">
+            <div class="contact-form__control">
               <input type="text" class="form-control" name="userName" placeholder="Your Name" />
-            </p>
-            <p class="contact-form__control">
+              <p><span hidden>This field is required!</span></p>
+            </div>
+            <div class="contact-form__control">
               <input type="email" class="form-control" name="userEmail" placeholder="Your Email" />
-            </p>
-            <p class="contact-form__control">
+              <p><span hidden>This field is required!</span></p>
+            </div>
+            <div class="contact-form__control">
               <textarea name="userMessage" id="usermessage" cols="30" rows="5" class="form-control" placeholder="Message text"></textarea>
-            </p>
-            <p class="contact-from__control">
+              <p><span hidden>This field is required!</span></p>
+            </div>
+            <div class="contact-form__control">
               <button class="btn btn-accent">Send message</button>
-            </p>
-          </form>
+              <p><span hidden>This field is required!</span></p>
+            </div>
+          </form><!-- End Contact Form -->
+          <div class="contact__item contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.681405548228!2d151.1782035711639!3d-33.897858157524524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b036e03acf29%3A0x7872a6a34d8ed0f4!2s333%20King%20St%2C%20Newtown%20NSW%202042%2C%20Australia!5e0!3m2!1sen!2sua!4v1666461981257!5m2!1sen!2sua" width="542" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </section><!-- End Section TEST - REMOVE before PRODUCTION -->
