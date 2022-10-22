@@ -127,6 +127,8 @@
     --modal-close-positions: calc(var(--modal-gaps) / 10);
     --modal-bg-color-rgba: rgba(185, 183, 189, 0.5);
     --modal-transition: all .375s ease-in;
+    /* CONTACT */
+    --contact-item-width: 100%;
 }
 
 /* Default */
@@ -141,6 +143,7 @@ body {
 }
 
 p {
+    margin: calc(var(--site-gaps-base) / 3) 0;
     line-height: var(--site-heading-line-height-md);
 }
 
@@ -247,6 +250,7 @@ a:focus,
 
 /* ELEMENTS */
 .form-control {
+    width: 100%;
     height: var(--site-control-height);
     padding: var(--site-gaps-half) var(--site-gaps-base);
     border-width: var(--site-control-border-width);
@@ -256,6 +260,11 @@ a:focus,
     cursor: pointer;
     background-color: transparent;
     outline: none;
+}
+
+textarea.form-control {
+    --site-control-height: auto;
+    resize: none;
 }
 
 .brand-img {
@@ -763,9 +772,21 @@ a:focus,
 }
 
 /* CONTACT */
-/* .contact {
+.contact {
+    gap: var(--site-gaps-base);
+    flex-wrap: wrap;
+}
 
-} */
+.contact__item {
+    flex: 1 1 var(--contact-item-width);
+    max-width: calc(var(--contact-item-width) - var(--site-gaps-half));
+}
+
+.contact-image {
+    max-height: 260px;
+    overflow: hidden;
+    border-radius: var(--site-border-radius-base);
+}
 
 /* RESPONSIVE STYLES */
 @media (orientation: portrait) {
@@ -825,6 +846,7 @@ a:focus,
         --modal-height-max: calc(100vh - var(--modal-margin-y));
         --modal-body-height: calc(var(--modal-height-max) - var(--modal-header-height) - var(--modal-margin-y));
         --modal-body-height-min: 400px;
+        --contact-item-width: 50%;
     }
 }
 
