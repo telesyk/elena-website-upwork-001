@@ -82,10 +82,10 @@
     <div class="header__bottom">
       <div class="container">
         <nav class="main-menu" id="mainMenu" role="menu" data-is-visible="false">
-          <a href="/about.html" class="main-menu__link">About Us</a role="menuitem">
-          <a href="/products.html" class="main-menu__link">Products</a role="menuitem">
-          <a href="/contact.html" class="main-menu__link">Contact</a role="menuitem">
-          <a href="/sample.html" class="main-menu__link is-active">Sample Test</a role="menuitem">
+          <a href="/about.html" role="menuitem" class="main-menu__link">About Us</a>
+          <a href="/products.html" role="menuitem" class="main-menu__link">Products</a>
+          <a href="/contact.html" role="menuitem" class="main-menu__link">Contact</a>
+          <a href="/sample.html" role="menuitem" class="main-menu__link is-active">Sample Test</a>
           <button class="main-menu__link btn btn-menu" role="menuitem" data-trigger="modal" data-target="sampleModal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart"
               viewBox="0 0 16 16">
@@ -118,20 +118,6 @@
   <main class="main">
     <section class="section section-samples" style="background-color: #fefefe;">
       <div class="container">
-        <!-- Form -->
-        <div class="contact-form__control" style="max-width: 400px;">
-          <input type="email" class="form-control" name="userEmail" placeholder="Your Email" required />
-          <p><span hidden>This field is required!</span></p>
-        </div>
-        <div class="contact-form__control" style="max-width: 400px;">
-          <textarea name="userMessage" id="usermessage" cols="30" rows="5" class="form-control" placeholder="Message text" required></textarea>
-          <p><span hidden>This field is required!</span></p>
-        </div>
-        <!-- DEVIDER START -->
-        <div>&nbsp;</div>
-        <hr />
-        <div>&nbsp;</div>
-        <!-- DEVIDER END -->
         <!-- Heading -->
         <div class="section__title heading-md">Sample of Section Title</div>
         <div class="heading-lg">Sample of title Large</div>
@@ -171,6 +157,84 @@
         <hr />
         <div>&nbsp;</div>
         <!-- DEVIDER END -->
+        <!-- Form -->
+        <div class="contact-form__control" style="max-width: 400px;">
+          <input type="email" class="form-control" name="userEmail" placeholder="Your Email" required />
+          <p><span hidden>This field is required!</span></p>
+        </div>
+        <div class="contact-form__control" style="max-width: 400px;">
+          <textarea name="userMessage" id="usermessage" cols="30" rows="5" class="form-control" placeholder="Message text" required></textarea>
+          <p><span hidden>This field is required!</span></p>
+        </div>
+        <!-- DEVIDER START -->
+        <div>&nbsp;</div>
+        <hr />
+        <div>&nbsp;</div>
+        <!-- DEVIDER END -->
+        <!-- Color Palette -->
+        <style>
+          .palette {
+            background-color: white;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-block-end: 5px;
+          }
+          .palette__item {
+            width: 100px;
+            height: 50px;
+            font-size: .75rem;
+          }
+        </style>
+        <div class="palette d-flex">
+          <div class="palette__item" style="background-color: var(--site-color-primary);">
+            <code>--site-color-primary</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-secondary);">
+            <code>--site-color-secondary</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-accent);">
+            <code>--site-color-accent</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-special);">
+            <code>--site-color-special</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-dimmed);">
+            <code>--site-color-dimmed</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-light);">
+            <code>--site-color-light</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-lighter);">
+            <code>--site-color-lighter</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="color: var(--site-color-light); background-color: var(--site-color-dark);">
+            <code>--site-color-dark</code>
+          </div><!-- End Palette Item -->
+        </div>
+        <div class="palette d-flex">
+          <div class="palette__item" style="background-color: var(--site-color-focus);">
+            <code>--site-color-focus</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="color: var(--site-color-light); background-color: var(--site-color-visited);">
+            <code>--site-color-visited</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-color-white-active);">
+            <code>--site-color-white-active</code>
+          </div><!-- End Palette Item -->
+        </div>
+        <div class="palette d-flex">
+          <div class="palette__item" style="background-color: var(--site-rgba-brown-soft);">
+            <code>--site-rgba-brown-soft</code>
+          </div><!-- End Palette Item -->
+          <div class="palette__item" style="background-color: var(--site-rgba-purple-grey);">
+            <code>--site-rgba-purple-grey</code>
+          </div><!-- End Palette Item -->
+        </div>
+        <!-- DEVIDER START -->
+        <div>&nbsp;</div>
+        <hr />
+        <div>&nbsp;</div>
+        <!-- DEVIDER END -->
       </div>
     </section><!-- End Section TEST - REMOVE before PRODUCTION -->
   </main>
@@ -186,12 +250,12 @@
             </a>
             <div class="footer__brand-name">TipTop Soles</div>
           </div><!-- End Footer Branding -->
-          <nav class="footer__nav">
-            <a href="#" class="footer__nav-item">Payment methods</a>
-            <a href="#" class="footer__nav-item">Returns</a>
-            <a href="#" class="footer__nav-item">Delivery</a>
-            <a href="#" class="footer__nav-item">Terms and Conditions</a>
-            <a href="#" class="footer__nav-item">Privacy policy</a>
+          <nav class="footer__nav" role="menu">
+            <a href="/sample.html" role="menuitem" class="footer__nav-item">Payment methods</a>
+            <a href="/sample.html" role="menuitem" class="footer__nav-item">Returns</a>
+            <a href="/sample.html" role="menuitem" class="footer__nav-item">Delivery</a>
+            <a href="/sample.html" role="menuitem" class="footer__nav-item">Terms and Conditions</a>
+            <a href="/sample.html" role="menuitem" class="footer__nav-item">Privacy policy</a>
           </nav><!-- End Footer Nav Links -->
           <address class="footer__contacts">
             <div class="footer__contacts-tel">
