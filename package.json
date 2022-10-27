@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "serve",
-    "build": "echo This is a static template, there is no bundler or bundling involved!"
+    "build": "rm -rf dist/*; cp ./*.html ./dist; cp ./*.png ./dist; cp ./*.ico ./dist; cp -R ./css ./dist; cp -R ./img ./dist",
+    "test": "echo This is a static template, there is no bundler or bundling involved!"
   },
   "repository": {
     "type": "git",
